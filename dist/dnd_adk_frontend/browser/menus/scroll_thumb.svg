@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="100" viewBox="0 0 10 100">
+  <!-- Thumb background with border -->
+  <rect x="0.5" y="0.5" width="9" height="99" 
+        rx="2" ry="2"
+        fill="black" stroke="#f8bb51" stroke-width="1"/>
+  
+  <!-- Grab indicator: 3 horizontal dashes -->
+  <line x1="3" x2="7" y1="45" y2="45" stroke="#f8bb51" stroke-width="0.8"/>
+  <line x1="3" x2="7" y1="50" y2="50" stroke="#f8bb51" stroke-width="0.8"/>
+  <line x1="3" x2="7" y1="55" y2="55" stroke="#f8bb51" stroke-width="0.8"/>
+</svg>

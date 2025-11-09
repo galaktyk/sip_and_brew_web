@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" data-beasties-container>
+
+<head>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>@font-face{font-family:'Libre Baskerville';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/librebaskerville/v17/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWx8QDP2V.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Libre Baskerville';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/librebaskerville/v17/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWxEQDA.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Libre Baskerville';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/librebaskerville/v17/kmKnZrc3Hgbbcjq75U4uslyuy4kn0qNXaxMICA.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Libre Baskerville';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/librebaskerville/v17/kmKnZrc3Hgbbcjq75U4uslyuy4kn0qNZaxM.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Libre Baskerville';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/librebaskerville/v17/kmKiZrc3Hgbbcjq75U4uslyuy4kn0qviTgY5KcCsww.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Libre Baskerville';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/librebaskerville/v17/kmKiZrc3Hgbbcjq75U4uslyuy4kn0qviTgY3KcA.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>@font-face{font-family:'Almendra';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/almendra/v28/H4ciBXKAlMnTn0CskxY4-LKYh563.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Almendra';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/almendra/v28/H4ciBXKAlMnTn0CskxY4-LyYhw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Almendra';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/almendra/v28/H4chBXKAlMnTn0CskxY48Ae9kq-Wbghq.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Almendra';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/almendra/v28/H4chBXKAlMnTn0CskxY48Ae9kqGWbg.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Almendra';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/almendra/v28/H4ckBXKAlMnTn0CskxYzyL6Agw.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Almendra';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/almendra/v28/H4ckBXKAlMnTn0CskxY9yL4.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Almendra';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/almendra/v28/H4cjBXKAlMnTn0Cskx6G7auxoqOOag.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Almendra';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/almendra/v28/H4cjBXKAlMnTn0Cskx6G7au_oqM.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>@font-face{font-family:'Geo';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/geo/v23/CSRx4zRZluflLUplaj0.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Geo';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/geo/v23/CSRz4zRZluflKHpn.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+
+
+
+  <meta charset="utf-8">
+  <title>DndAdkFrontend</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>:root{--global-font-size-text:115%;--global-background-color:#151816;--sidebar-background-color:#1f2322}*{-webkit-user-select:none;user-select:none;-webkit-user-drag:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;cursor:none!important}*::-webkit-scrollbar{background-color:#0000;width:14px}*::-webkit-scrollbar-thumb{background-color:#64646480;border-radius:4px;height:30px;border:2px solid rgba(0,0,0,0);background-clip:padding-box}html,body{font-size:var(--global-font-size-text);margin:0;padding:0;height:100%;width:100%;font-family:Libre Baskerville,serif;background-image:none;background-size:cover;background-color:var(--global-background-color);color:#d0d0d5}</style><link rel="stylesheet" href="styles-XCUMRDUS.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-XCUMRDUS.css"></noscript></head>
+
+<body>
+
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+
+    <filter id="ColorGrading" color-interpolation-filters="sRGB">
+      <feComponentTransfer>
+        <feFuncR type="linear" slope="0.96"/>
+        <feFuncG type="identity"/>
+        <feFuncB type="identity" slope="0.96"/>
+        <feFuncA type="identity"/>
+      </feComponentTransfer>
+    </filter>
+
+
+
+
+
+
+
+
+
+
+
+    <filter id="CRTCurve" filterUnits="objectBoundingBox" x="-0.3" y="-1.29" width="1.6" height="3.5" color-interpolation-filters="sRGB">
+      <feImage id="mapa" result="Map" href="sphere_wide_1.png"/>
+
+      <!-- Sample 1: Center -->
+      <feDisplacementMap in="SourceGraphic" in2="Map" scale="70" xChannelSelector="R" yChannelSelector="G" result="disp1"/>
+
+      <!-- Sample 2: Slightly offset -->
+      <feOffset in="SourceGraphic" dx="0.75" dy="0.75" result="offset1"/>
+      <feDisplacementMap in="offset1" in2="Map" scale="70" xChannelSelector="R" yChannelSelector="G" result="disp2"/>
+
+      <!-- Sample 3: Another offset -->
+      <feOffset in="SourceGraphic" dx="-0.75" dy="0.75" result="offset2"/>
+      <feDisplacementMap in="offset2" in2="Map" scale="70" xChannelSelector="R" yChannelSelector="G" result="disp3"/>
+
+      <!-- Sample 4: Another offset -->
+      <feOffset in="SourceGraphic" dx="0.75" dy="-0.75" result="offset3"/>
+      <feDisplacementMap in="offset3" in2="Map" scale="70" xChannelSelector="R" yChannelSelector="G" result="disp4"/>
+
+      <!-- Make each sample 25% opacity -->
+      <feComponentTransfer in="disp1" result="disp1_weighted">
+        <feFuncA type="linear" slope="0.25"/>
+      </feComponentTransfer>
+      <feComponentTransfer in="disp2" result="disp2_weighted">
+        <feFuncA type="linear" slope="0.25"/>
+      </feComponentTransfer>
+      <feComponentTransfer in="disp3" result="disp3_weighted">
+        <feFuncA type="linear" slope="0.25"/>
+      </feComponentTransfer>
+      <feComponentTransfer in="disp4" result="disp4_weighted">
+        <feFuncA type="linear" slope="0.25"/>
+      </feComponentTransfer>
+
+      <!-- Composite all samples together -->
+      <feComposite in="disp1_weighted" in2="disp2_weighted" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="sum1"/>
+      <feComposite in="sum1" in2="disp3_weighted" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="sum2"/>
+      <feComposite in="sum2" in2="disp4_weighted" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
+
+
+    </filter>
+
+
+
+    <!-- Screen noise -->
+    <filter id="ScreenNoiseFilter" x="0vw" y="0vh" width="100vw" height="100vh">
+      <feFlood flood-color="#808080" result="neutral-gray"/>
+      <feTurbulence in="neutral-gray" type="fractalNoise" baseFrequency="0.3" seed="1" numOctaves="10" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="destaturatedNoise"/>
+      <feComponentTransfer in="desaturatedNoise" result="theNoise">
+        <feFuncA type="table" tableValues="0 0 0.2 0"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="theNoise" mode="soft-light" result="noisy-image"/>
+    </filter>
+
+
+
+    <!-- Screen lines -->
+    <filter id="screenLines" x="0vw" y="0vh" width="100vw" height="100vh">
+      <feFlood flood-color="#808080" result="neutral-gray"/>
+      <feTurbulence in="neutral-gray" type="fractalNoise" baseFrequency="0.001 10" numOctaves="10" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="destaturatedNoise"/>
+      <feComponentTransfer in="desaturatedNoise" result="theNoise">
+        <feFuncA type="table" tableValues="0 0 0.2 0"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="theNoise" mode="soft-light" result="noisy-image"/>
+    </filter>
+
+
+
+
+
+
+
+    <!-- VHS Chroma Smear -->
+    <filter id="VHSChromaSmear" x="-20%" y="-20%" width="140%" height="140%">
+      <!-- Separate RGB channels -->
+      <feColorMatrix in="SourceGraphic" type="matrix" result="red" values="1 0 0 0 0
+            0 0 0 0 0
+            0 0 0 0 0
+            0 0 0 1 0"/>
+
+      <feColorMatrix in="SourceGraphic" type="matrix" result="green" values="0 0 0 0 0
+            0 1 0 0 0
+            0 0 0 0 0
+            0 0 0 1 0"/>
+
+      <feColorMatrix in="SourceGraphic" type="matrix" result="blue" values="0 0 0 0 0
+            0 0 0 0 0
+            0 0 1 0 0
+            0 0 0 1 0"/>
+
+      <feBlend in="red" in2="green" mode="screen" result="yellow"/>
+
+      <!-- Horizontal blur on chroma channels -->
+      <feGaussianBlur in="blue" stdDeviation="4 0" result="blueBlur"/>
+      <feGaussianBlur in="yellow" stdDeviation="0.5 0" result="yellowSmear"/>
+
+      <feOffset in="yellowSmear" dx="3" dy="0" result="yellowOffset"/>
+
+      <feBlend in="blueBlur" in2="yellowOffset" mode="screen"/>
+
+    </filter>
+
+
+  </svg>
+
+
+
+  <app-root></app-root>
+
+
+<script src="polyfills-5CFQRCPP.js" type="module"></script><script src="main-C4NHJVV5.js" type="module"></script></body>
+
+</html>
